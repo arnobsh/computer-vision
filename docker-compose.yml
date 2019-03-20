@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  image_processing:
+    build: .
+    environment:
+        TZ: America/Los_Angeles
+        APPLICATION_ENV: "local"
+        APP_SITE_ENV: "local"
+    ports:
+      - 8000:80
+      - 8080:8080
+      - 8888:8888
