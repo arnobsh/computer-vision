@@ -6,3 +6,5 @@ nbproject
 .project
 .settings
 venv/
+src/.ipynb_checkpoints/*
+src/.ipynb_checkpoints
