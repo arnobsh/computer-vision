@@ -17,18 +17,23 @@ Or for linux
 
 ## Running the program
 
+### Image Filter Program:
+
 Inside the container you can run the program by following commad
 ```
-root@ce0e3288f2fd:/app# python image_filter.py
+root@ce0e3288f2fd:/app# cd src
+root@ce0e3288f2fd:/app/src# python image_filter.py
 ```
 ## Running the jupyter notebook
 
 Inside the container for running jupyter notebook
 
 ```bash
-#  jupyter notebook
+#  jupyter notebook --ip 0.0.0.0 --no-browser --allow-root
 ```
 Alternatively, from the command prompt, you can run
+
+### Image Filter Program:
 
 ```
 docker run -it -p 8888:8888 image_processing_image_processing:latest bash
@@ -45,9 +50,13 @@ http://127.0.0.1:8888/tree
 
 Following URLS consists all of the necessary code you may need for understanding the image filtering code
 
+### Image Filter Program:
+
 http://127.0.0.1:8888/notebooks/image_filter.ipynb
 
 
 ## Problem Domain
+
+### Image Filter Program:
 
  I want you to modify the values of the variables red_threshold, green_threshold, and blue_threshold until you are able to retain as much of the lane lines as possible, while getting rid of most of the other stuff. 

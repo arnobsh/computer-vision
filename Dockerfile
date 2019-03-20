@@ -13,10 +13,10 @@ RUN python -m pip install matplotlib pillow
 # Installing Jupyter notebook
 RUN pip3 install jupyter
 # Copy resource file
-COPY resources/* ./
+COPY resources/* ./resources/
 
 # Bundle app source
-COPY src/* ./
+COPY src/* ./src/
 
 EXPOSE 8080 8888
 CMD  [ "python", "image_filter.py", "jupyter notebook" ]
