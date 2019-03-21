@@ -32,6 +32,13 @@ root@ce0e3288f2fd:/app# cd src
 root@ce0e3288f2fd:/app/src# python region_masking.py
 ```
 
+### 3. Color and Region Combine:
+
+```
+root@ce0e3288f2fd:/app# cd src
+root@ce0e3288f2fd:/app/src# python color_region_combine.py
+```
+
 ## Running the jupyter notebook
 
 Inside the container for running jupyter notebook
@@ -73,3 +80,8 @@ http://127.0.0.1:8888/notebooks/region_masking.ipynb
 ### 2. Region Masking Program:
 
  Mask the triangular region with using polyfit algorithm
+ 
+### 3. Color and Region Combine:
+
+Combining Color and Region Selections
+How to mask out a region of interest in an image. Next, let's combine the mask and color selection to pull only the lane lines out of the image.

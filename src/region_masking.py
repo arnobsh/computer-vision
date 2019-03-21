@@ -14,11 +14,15 @@ region_select = np.copy(image)
 
 # Define a triangle region of interest
 # Keep in mind the origin (x=0, y=0) is in the upper left in image processing
-# Note: if you run this code, you'll find these are not sensible values!!
-# But you'll get a chance to play with them soon in a quiz
+
+## Note: we use broad traingle as when color removal happens it will delete all the color of red
+# only keep the white color which will be ploted when red iage over the black image
+## The more space over middle of white lane eventually remove the all black
+## and white lane will be replaced by the red
 left_bottom = [0, 539]
-right_bottom = [900, 300]
-apex = [400, 0]
+right_bottom = [900, 539]
+# apex will mid point the top corner, the view point and remove the unnecessary lanes input
+apex = [475, 320]
 
 # Fit lines (y=Ax+B) to identify the  3 sided region of interest
 # np.polyfit() returns the coefficients [A, B] of the fit
