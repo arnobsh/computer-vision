@@ -10,6 +10,7 @@ RUN pip3 install -r requirements.txt
 
 RUN python -m pip install -U pip setuptools
 RUN python -m pip install matplotlib pillow
+RUN python -m pip3 install opencv-python
 # Installing Jupyter notebook
 RUN pip3 install jupyter
 # Copy resource file
